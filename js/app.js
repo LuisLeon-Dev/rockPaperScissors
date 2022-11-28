@@ -1,32 +1,37 @@
+//player selection
+function playerSelection() {
+  let selection = prompt("Choice your weapon: rock, paper or scissors");
+  console.log(`Player: ${selection}`);
+  return selection;
+}
+
 //Computer choice
 
 function getComputerChoice() {
-  let options = ["rock", "paper", "scissor"];
+  let options = ["rock", "paper", "scissors"];
   choice = Math.floor(Math.random() * 3);
 
   if (choice == 0) {
-    return options[0];
+    console.log(`Computer: ${options[0]}`);
+    return options[choice];
   } else if (choice == 1) {
-    return options[1];
+    console.log(`Computer: ${options[1]}`);
+    return options[choice];
   } else if (choice == 2) {
-    return options[2];
+    console.log(`Computer: ${options[2]}`);
+    return options[choice];
   } else {
-    return "Error! try again";
+    console.log("Error! try again");
   }
-}
-
-//player selection
-function playerSelection() {
-  let selection = "rock";
-  return selection.toLowerCase();
 }
 
 //Game function
-function playRound(playerSelection, computerSelection) {
-  if (playerSelection == "rock" || computerSelection == "paper") {
-    return "";
+function playRound(player, computer) {
+  if (player == computer) {
+    console.log("It's a draw");
+  } else if (player == "rock" && computer == "scissors") {
+    console.log("Player Wins!");
   }
 }
 
-const playerSelection = playerSelection();
-const computerSelection = getComputerChoice();
+playRound(playerSelection(), getComputerChoice());
