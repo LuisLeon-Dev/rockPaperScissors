@@ -31,6 +31,18 @@ function playRound(player, computer) {
     console.log("It's a draw");
   } else if (player == "rock" && computer == "scissors") {
     console.log("Player Wins!");
+  } else if (player == "rock" && computer == "paper") {
+    console.log("Computer Wins!");
+  } else if (player == "paper" && computer == "rock") {
+    console.log("Player Wins!");
+  } else if (player == "paper" && computer == "scissors") {
+    console.log("Computer Wins!");
+  } else if (player == "scissors" && computer == "paper") {
+    console.log("Player Wins!");
+  } else if (player == "scissors" && computer == "rock") {
+    console.log("Computer Wins!");
+  } else {
+    console.log("Something went wrong!");
   }
 }
 
