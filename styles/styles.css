@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #3171c4;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  padding: 2rem;
+
+  color: #fff;
+}
+h3 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.game__display {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.game__display p {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.game__choice {
+  height: 200px;
+}
+
+.game__buttons button {
+  padding: 10px 0;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  margin: 15px;
+  font-size: 18px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #737373;
+  color: #fff;
+  transition: ease 0.5s;
+}
+
+.game__restart button {
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin: 15px;
+  font-size: 18px;
+  background-color: #30ae26;
+  color: #fff;
+}
+
+.game__restart button:hover {
+  cursor: pointer;
+  background-color: #31a429;
+  transition: ease-in-out 0.5s;
+}
